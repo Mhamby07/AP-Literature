@@ -20,7 +20,7 @@ st.set_page_config(
 # ── Asset directory ──
 # Using absolute path resolution to avoid IDE/terminal pathing quirks
 CURRENT_DIR = Path(__file__).parent.resolve()
-ASSETS_DIR = CURRENT_DIR / "assets"
+ASSETS_DIR = CURRENT_DIR 
 
 genai.configure(api_key=st.secrets["API_KEY"])
 
