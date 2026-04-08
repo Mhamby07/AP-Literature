@@ -303,14 +303,7 @@ with st.sidebar:
         st.warning(f"⚠️ Missing local file: Cannot find `{loc_img_file}` inside `{ASSETS_DIR}`")
         st.image("https://via.placeholder.com/400x200.png?text=Missing+Location+Image", use_column_width=True)
 
-    # ── AUDIO LOADER ──
-    audio_file = loc_data.get("audio_file")
-    audio_path = ASSETS_DIR / audio_file
-    if audio_path.exists():
-        st.audio(str(audio_path), format="audio/mp3")
-        st.caption("🎧 *Ambient Soundscape Active*")
-    else:
-        st.warning(f"⚠️ Missing local audio file: Cannot find `{audio_file}` inside `{ASSETS_DIR}`")
+ 
         
     st.markdown("---")
     
